@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/Pakhaji30/cfnfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/Pakhaji30/ssh/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -24,7 +24,7 @@ echo -e "${NC}${LIGHT}085225171738"
 exit 0
 fi
 clear
-lizupdate="raw.githubusercontent.com/Pakhaji30/cfnfree/main/update"
+lizupdate="raw.githubusercontent.com/Pakhaji30/ssh/main/update"
 # change direct
 cd /usr/bin
 # remove file
