@@ -23,44 +23,54 @@ Error = "$ {
 }"
 clear
 echo -e "$BLUE╔═══════════════════════════════════════$BLUE╗"
-echo -e "$BLUE║           $ORANGE  [ Main Menu ]          $BLUE   ║"
+echo -e "$BLUE║           $ORANGE ✶ Setting Menu ✶        $BLUE   ║"
 echo -e "$BLUE╠═══════════════════════════════════════$BLUE╣"
 echo -e "$BLUE║---------------------------------------║"
-echo -e "$BLUE╠➣$NC 1$NC. SSH & OpenVPN Account             $BLUE║ "
-echo -e "$BLUE╠➣$NC 2$NC. Restart All Service         $BLUE      ║ " 
-echo -e "$BLUE╠➣$NC 3$NC. Backup & Restore            $BLUE      ║ " 
-echo -e "$BLUE╠➣$NC 4$NC. Settings                    $BLUE      ║ " 
-echo -e "$BLUE╠➣$NC 5$NC. Cek Service                 $BLUE      ║ " 
-echo -e "$BLUE╠➣$NC 6$NC. Exit                        $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 1$NC. Change Domain                     $BLUE║ "
+echo -e "$BLUE╠➣$NC 2$NC. Add Cloudfront Domain             $BLUE║ "
+echo -e "$BLUE╠➣$NC 3$NC. Change Port SSH WS SSL/TLS   $BLUE     ║ " 
+echo -e "$BLUE╠➣$NC 4$NC. Change Port SSH WS Non-TLS   $BLUE     ║ " 
+echo -e "$BLUE╠➣$NC 5$NC. Change Port OVPN             $BLUE     ║ " 
+echo -e "$BLUE╠➣$NC 6$NC. Set Limit Speed             $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 7$NC. Cek Bandwith Server         $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 8$NC. Rennew Cert                 $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 9$NC. Back to Menu                $BLUE      ║ " 
 echo -e "$BLUE║---------------------------------------║"
-echo -e "$BLUE╠➣$NC Mod By KANG HORY                        $BLUE║"
-echo -e "$BLUE╠➣$NC 085225171738                            $BLUE║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
-read -p "Select From Options [ 1 - 6 ] : " menu
+read -p "Select From Options [ 1 - 7 ] : " menu
 echo -e ""
 case $menu in
 1)
-maddssh
+addhost
 ;;
 2)
-sslh-fix-reboot
+cfnhost
 ;;
 3)
-mbackup
+portsshws
 ;;
 4)
-msetting
+portsshnontls
 ;;
 5)
-start-menu
+portopvn
 ;;
-5)
+6)
+limitspeed
+;;
+7)
+vnstat
+;;
+8)
+certsslh
+;;
+9)
 clear
-exit
+menu
 ;;
 *)
 clear
-menu
+msetting
 ;;
 esac
 #
