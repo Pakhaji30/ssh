@@ -33,7 +33,7 @@ echo -e "$BLUE╠➣$NC 4$NC. Settings                    $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 5$NC. Cek Service                 $BLUE      ║ " 
 echo -e "$BLUE╠➣$NC 6$NC. Exit                        $BLUE      ║ " 
 echo -e "$BLUE║---------------------------------------║"
-echo -e "$BLUE╠➣$NC Mod By KANG HORY                        $BLUE║"
+echo -e "$BLUE╠➣$NC Mod By KANG HORY VVIP                       $BLUE║"
 echo -e "$BLUE╠➣$NC 085225171738                            $BLUE║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
 read -p "Select From Options [ 1 - 6 ] : " menu
